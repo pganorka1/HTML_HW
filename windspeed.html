@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Wind Speed</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color:#F0F0F0">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <div class="box-heading"><a href="index.html" style="text-decoration:none; color : white;">Latitude_home</a></div>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="temperature.html">Max Temperature</a></li>
+                <li><a href="humidity.html">Humidity</a></li>
+                <li><a href="cloudiness.html">Cloudiness</a></li>
+                <li><a href="windspeed.html">Wind Speed</a></li>
+            </ul>
+          </li>
+          <li><a href="comparison.html">Comparison</a></li>
+          <li><a href="data.html">Data</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+
+    <div class="container">
+   
+        <div class="row">
+            <div class="col-md-8">
+                <div class = "box-text">
+                    <h3>Wind Speed</h3>
+                    <hr>
+                    <img src="output_data/Fig4.png" align="middle" style="width:600px;height:450px;"/>
+                    <br>
+                    <p style="line-height:200%"> Plot shows no clear correlation between latitude and windspeed. However there are few high latitude cities in northern hemisphere with high wind speeds.</p> 
+                </div>
+            </div>
+            <div class="col-md-4">
+                    <div class = "box-text">
+                        <h3>Visualizations</h3>
+                        <hr>
+                        <div class="row">
+                                <a href="temperature.html"><div class="col-md-6"><img class="img-icon" src="output_data/Fig1.png" /></div></a>
+                                <a href="humidity.html"><div class="col-md-6"><img class="img-icon" src="output_data/Fig2.png" /></div></a>
+                        </div>
+                        <div class="row">
+                            <a href="cloudiness.html"><div class="col-md-6"><img class="img-icon" src="output_data/Fig3.png" /></div></a>
+                            <a href="windspeed.html"><div class="col-md-6 border"><img class="img-icon" src="output_data/Fig4.png" /></div></a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
